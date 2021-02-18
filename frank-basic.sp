@@ -67,7 +67,7 @@ public void OnPluginStart()
 	HookEvent("announce_phase_end", Event_AnnouncePhaseEnd);
 	HookEvent("player_disconnect", Event_Disconnect, EventHookMode_Pre);
 	//HookEvent("player_team", Event_PlayerTeam, EventHookMode_Pre); 
-	g_cookieRank = RegClientCookie("g_iRank", "", CookieAccess_Private);
+	g_cookieRank = RegClientCookie("g_iRank", "", CookieAccess_Protected);
 	g_cookieProfileRank = RegClientCookie("g_iProfileRank", "", CookieAccess_Private);
 	g_cookieCoin = RegClientCookie("g_iCoin", "", CookieAccess_Private);
 	
